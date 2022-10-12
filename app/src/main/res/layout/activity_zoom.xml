@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_layout"
+    tools:context=".ZoomActivity">
+
+<!--    <com.example.ontouch.MyCanvas
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.ontouch.MyCanvas
+            android:id="@+id/myview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/tx"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="X : "/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/ty"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tx"-->
+<!--        android:text="Y : "/>-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/t1x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X : "/>
+
+        <TextView
+            android:id="@+id/t2x"
+            android:layout_toRightOf="@+id/t1x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/t1y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t1x"
+            android:text="Y : "/>
+
+        <TextView
+            android:id="@+id/t2y"
+            android:layout_toRightOf="@+id/t1y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t1x"
+            android:text=""/>
+
+    </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+<!--        <View-->
+<!--            android:id="@+id/textview"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:background="@drawable/rectangle" />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>
